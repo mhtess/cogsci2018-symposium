@@ -1,0 +1,5 @@
+*.aux
+*.log
+*.pdf
+*.synctex.gz
+cogsci_conventionsSymposium.tex
