@@ -28,13 +28,13 @@
 \title{Generalizations, from representation to transmission}
  
 \author{{\large \bf Michael Henry Tessler (mhtessler@stanford.edu)}, {\large \bf Noah D. Goodman (ngoodman@stanford.edu)}  \\
-  Department of Psychology, Stanford University
+  Department of Psychology, Stanford University \vspace{-0.1cm}
    \AND {\large \bf David Danks (ddanks@cmu.edu)} \\
-  Department of Philosophy, Carnegie Mellon University
-    \AND {\large \bf Marjorie Rhodes (marjorie.rhodes@nyu.edu)} \\
-  Department of Psychology, New York University
+  Departments of Philosophy and Psychology, Carnegie Mellon University \vspace{-0.1cm}
+    \AND{\large \bf Emily Foster-Hanson (emily.fosterhanson@nyu.edu)}, {\large \bf Marjorie Rhodes (marjorie.rhodes@nyu.edu)} \\
+  Department of Psychology, New York University \vspace{-0.1cm}
     \AND {\large \bf Gregory Carlson (calrson@ling.rochester.edu)} \\
-  Department of Linguistics, University of Rochester
+  Department of Linguistics, University of Rochester \vspace{-0.1cm}
   }
 
 
@@ -51,28 +51,35 @@
 
 
 \begin{quote}
-Because any object or situation experienced by an individual is unlikely to recur in exactly the same form and context, psychology's first general law should, I suggest, be a law of generalization.  -- Shepard, 1987
+\emph{Because any object or situation experienced by an individual is unlikely to recur in exactly the same form and context, psychology's first general law should, I suggest, be a law of generalization.}  -- Roger Shepard, 1987
 \end{quote}
 
 \section{Overview}
 
 Generalizable knowledge is crucial to thrive in our open-ended, dynamic world. 
-Concepts help us organize our knowledge: Learning that an entity is an instance of a \textsc{dog} affords certain inferences about its properties and behaviors.
-Learning about dogs may be straightforward enough, but many generalizations are difficult to acquire through direct experience: Relevant observations may be costly (e.g., learning that a plant is poisonous) or rare (e.g., understanding that lightning strikes tall objects). 
+Such knowledge is organized with concepts: Understanding that an entity is a \textsc{dog} affords inferences about its properties and behaviors. 
+But not all generalizations are straightforward to acquire through direct experience: Relevant observations may be costly (e.g., learning that a plant is poisonous) or rare (e.g., understanding that lightning strikes tall objects). 
 It thus is important that language allow us to communicate such generalizations to each other. 
 By sharing generalizations, we flourish collectively without individually needing to taste potentially-poisonous plants or personally witness many lightning strikes.
-Yet, relying upon others too much can lead us astray: Generalizations about particular categories (e.g., social categories) can be exploited for ulterior motives. 
+The dark side of generalizations from others is that evidence can be exaggerated: Knowledge about particular categories (e.g., social categories) can be distorted for ulterior motives. 
 
-Thirty years after Shepard's insightful statement, the cognitive science of generalization is an expanding topic, ranging from representational questions concerning the format and organization of concepts to issues of transmission, how generalizable knowledge is passed from one intelligent creature to the next and how socially-transmitted information shapes and misshapes our theories of the world.
+Thirty years after Shepard's insightful statement, the cognitive science of generalization is an expansive topic, ranging from representational questions concerning the format and organization of concepts to issues of transmission, how generalizable knowledge is passed from one intelligent creature to the next.
+% and how socially-transmitted information shapes and misshapes our theories of the world.
 The aim of this symposium is to gather and integrate several distinct empirical and theoretical perspectives on the study of generalizations, with a particular focus on the transmission of generalizations using language.
 This set of issues cuts across the interests of many different areas of cognitive science: from linguists concerned with the truth-conditions of utterances conveying generalization, to developmental psychologists interested in how children learn abstract knowledge and computer scientists attempting to build machines that think and speak like people. 
-Because of this breadth and because of recent developments in both empirical and theoretical paradigms, we are confident this symposium will be of broad interest at Cognitive Science.
+Because of this breadth and of recent developments in both empirical and theoretical paradigms, we are confident this symposium will be of broad interest at Cognitive Science.
 
-The symposium will consist of four talks, described below, by experts representing philosophy, linguistics, computational modeling, and developmental psychology.
-We will close with a panel discussion on some of these issues, led by Noah Goodman.
+The symposium will consist of four talks by experts representing philosophy, linguistics, computational modeling, and developmental psychology.    
+Danks will argue for a particular representation of generalizations (operations on graphical models) and describe how language interfaces with this representation.
+ Tessler presents a computational model that formalizes the generalizations in language (oft studied in the form of \emph{generic language}) into a probabilistic cognitive modeling framework.
+ Foster-Hanson highlights the importance of implicitly communicating what are meaningful categories, and how even refutations of generalizations can reinforce latent, transmitted knowledge of categories in young children.
+ Carlson investigates a different kind of refutation, exceptions to a generalizations, and will present linguistic data bearing on the topic.
+We will close with a panel discussion on some of these issues, led by Noah Goodman and Marjorie Rhodes.
 
-%\noindent\textbf{Generalizations from the integration of concepts \& (linguistic) structure} \\
-\subsubsection{Generalizations from the integration of concepts \& (linguistic) structure}
+
+
+\noindent\textbf{Generalizations from the integration of concepts \& (linguistic) structure}  \\
+%\subsubsection{Generalizations from the integration of concepts \& (linguistic) structure}
 \noindent\emph{David Danks}
 
 Concepts provide one key mechanism by which people generalize: understanding an object as a \textsc{dog}, for example, enables a number of inferences about the object on the basis of it belonging to this type. 
@@ -84,7 +91,7 @@ In this talk, I will first argue that many of our concepts can be fruitfully und
 I will then show how to integrate these representations (as graphical models) into a unified model of linguistic content that incorporates both ``conceptual content'' and ``structural content'', as well as complex interactions between the two. 
 Throughout, I will focus on the linguistic phenomenon of \emph{bridging}, as the generalizations and inferences in those instances depend crucially on both types of content, and so require an integrated model.
 
-\noindent\textbf{Communicating generalizations in computational terms} \\
+\noindent\textbf{The language of generalization, in computational terms} \\
 \noindent\emph{Michael Henry Tessler}
 
 %\noindent\emph{Michael Henry Tessler}
@@ -92,46 +99,56 @@ Throughout, I will focus on the linguistic phenomenon of \emph{bridging}, as the
 
 Generalizations are central to human understanding and language provides simple ways to convey them in the form of \emph{generic language}, or generics (e.g., ``Birds fly''). 
 Generics are ubiquitous in everyday discourse and child-directed speech, yet the meaning of these expressions is logically puzzling (e.g., not all birds fly) and has resisted precise formalization. 
-The major issue in formalizing generic language is determining which statements are true or which are false and how they should be interpreted.
+The major issue in formalizing generic language is determining which statements are true, which are false, and how to interpret them in context. 
 
-Using a probabilistic model of language understanding, we explore the hypothesis that the meaning of these linguistic expressions is \emph{simple but underspecified}, and that general communicative principles can be used to establish a more precise meaning in context. 
-This theory predicts that background knowledge in the form of prior beliefs about the prevalence of the feature in different categories is the connective tissue between the flexible endorsements and interpretations of generic sentences. 
+Using a probabilistic model of language understanding, I explore the hypothesis that the meaning of these linguistic expressions is simple but underspecified, and that general communicative principles can be used to establish a more precise meaning in context. 
+This theory predicts that background knowledge---in the form of prior beliefs about the prevalence of the feature in different categories---is the connective tissue between the flexible endorsements and interpretations of generic sentences. 
 To test this theory, we examine generics about novel causal domains while manipulating background knowledge about the causal systems. 
 We find that both interpretations and endorsements are sensitive to background knowledge in the ways predicted by the probabilistic model. 
-These results suggest that the context-sensitivity of generic language emerges from the interaction of an underspecified meaning with diverse beliefs about properties.
+These results suggest that the context-sensitivity of generalizations in language emerges from the interaction of an underspecified meaning with diverse beliefs about properties.
 
 %Generalizations are the foundation of abstract thought: They allow us to make sense of the world and predict the future. Yet, the language of generalizations (e.g., ``Birds fly'') has received comparatively little attention by formal models, despite its ubiquity in everyday discourse and child-directed speech. Genericity is difficult to formalize because it exhibits extreme flexibility in usage (e.g., not all birds fly) despite looking so simple. I formalize the hypothesis that the core meaning of generalizations in language is simple but underspecified, and that general communicative principles can be used to establish a more precise meaning in context. Using a state-of-the-art probabilistic model of pragmatic reasoning, I examine 3 case studies of generalizations in language: generalizations about events (e.g., John runs), causes (e.g., The block makes the machine play music.), and categories (i.e., generic language, e.g., Birds fly). The model is able to predict graded endorsements from the interaction of diverse prior beliefs about properties with general communicative principles, pointing a way towards more complete models of language and cognition.
 
 \noindent\textbf{Speaking of kinds: How generics convey information about category structure} \\
-\noindent\emph{Marjorie Rhodes, Emily Foster Hanson, Sarah-Jane Leslie}
+\noindent\emph{Emily Foster-Hanson, Marjorie Rhodes, Sarah-Jane Leslie}
 
-Generic language (e.g., ``boys play baseball'', ``boys like blue'') leads children to assume that particular categories (boys) contain members that are united by deep, intrinsic causal mechanisms \cite{gelman2010effects, rhodes2012cultural}. 
-The present studies (N = 120, 4-year-old children) examined why this might be the case. 
-We considered that because preschool-age children expect (a) that generics refer to categories \cite{gelman2003preschool}, and (b) that adults usually know the right names for things \cite{jaswal2007looks}, they might assume that adults use generics systematically?to refer to categories that are objectively meaningful and reflect natural causal structure. 
-A unique feature of this account is that, from this perspective, generics could change how children think about categories even if children later learn that the generics conveyed completely inaccurate content. 
-From this perspective, even if an adult said something wrong about a category, their choice to use a generic could still be consequential.
+Generic language (e.g., ``Boys play baseball'', ``Boys like blue'') leads children to assume that particular categories (\textsc{boys}) contain members that are united by deep, intrinsic causal mechanisms \cite{gelman2010effects, rhodes2012cultural}. 
+The present studies (N = 120, 5-year-old children) examined why this might be the case. 
+We investigated the hypothesis that children expect adults to use generics systematically to refer to categories that are objectively meaningful and reflect natural causal structure \cite<cf.,>{gelman2003preschool, jaswal2007looks}
+% that because preschool-age children expect (a) that generics refer to categories \cite{gelman2003preschool}, and (b) that adults usually know the right names for things \cite{jaswal2007looks}, they might assume that adults use generics systematically to refer to categories that are objectively meaningful and reflect natural causal structure. 
+A unique feature of this account is that subsequently falsified generics could change how children think about categories.
+% even if children later learn that the generics conveyed completely inaccurate content. 
+%From this perspective, even if an adult said something wrong about a category, their choice to use a generic could still be consequential.
 
 In these studies, children were exposed to generic sentences about novel categories (e.g., ``Zarpies have striped hair''), which were later contradicted in various ways. 
-Some of these contradictions maintained the generic scope of the sentence (e.g., ``Zarpies don?t have striped hair''; ``No, that?s not right about Zarpies''), whereas others affirmed the property but contradicted the generic scope (e.g., ``No, this Zarpie has striped hair''). 
-We found that children who heard contradictions that maintained the generic scope held stronger beliefs that the category contained members share intrinsic causal mechanisms than children who heard contradictions that affirmed the property but challenged the generic scope. 
-These studies provide evidence that generics influence conceptual development not only through the content they convey, but also because children expect adults to use them to refer to meaningful causal clusters in the world.
+Some of these contradictions maintained the generic scope of the sentence (e.g., ``Zarpies don't have striped hair''; ``No, that's not right about Zarpies''), whereas others affirmed the property but contradicted the generic scope (e.g., ``No, this Zarpie has striped hair''). 
+We found that children held stronger beliefs that members of the category shared intrinsic causal mechanisms upon hearing contradictions that maintained the generic scope than when they heard statements that challenged the generic scope. 
+These studies provide evidence that generics influence conceptual development not only through the content they convey, but also because children understand them to refer to meaningful causal clusters in the world.
 
-\noindent\textbf{Is exceptionality something to be taken seriously?  We will try.} \\
+\noindent\textbf{Is exceptionality something to be taken seriously?  We will try.} 
 \noindent\emph{Greg Carlson}
 
-The initial instinct with generics, such as ``Cats chase mice'', is to treat these as expressing a universal truth (in this case, about cats), allowing for some exceptions.  Exactly how these ``exceptions'' are dealt with formally may vary---e.g., by invoking a notion of ``normality'' \cite{eckardt1999normal}, circumscription \cite{mccarthy1980circumscription}, non-monotonic reasoning \cite{asher1995some}, near-universal quantification \cite{krifka1995introduction}, attributed to the ``metaphysical''  \cite{liebesman2011simple}---but the intuition is that, say, a cat that doesn't chase mice (even when presented with the opportunity) does not conform to canonical cat-behavior.  
-However, I first argue that generics can be regarded as true even when they are incredibly ``weak'', in the sense that a minority or even a few of the instances seem to conform to the canonical behavior or property expressed.  
-I argue that these cases go far beyond the instances \citeA{leslie2008generics} has emphasized (``Mosquitos carry the West Nile virus''), and in such instances the notion of non-conforming individuals being regarded as ``exceptions'' seems attenuated if not absent altogether.
+The initial instinct with generics, such as ``Cats chase mice'', is to treat these as expressing a universal truth (in this case, about \textsc{cats}), allowing for some exceptions.
+ Exactly how these ``exceptions'' are dealt with formally may vary---e.g., by invoking a notion of ``normality'', %\cite{eckardt1999normal}, 
+ circumscription, %\cite{mccarthy1980circumscription}, 
+ non-monotonic reasoning, %\cite{asher1995some}, 
+ near-universal quantification, %\cite{krifka1995introduction}, 
+ attributions to the ``metaphysical'', %\cite{liebesman2011simple}, 
+ among others---but the intuition is that, say, a cat that doesn't chase mice (even when presented with the opportunity) does not conform to canonical cat-behavior.  
+However, I first argue that generics can be regarded as true even when only minority or even a few of the instances seem to conform to the canonical behavior or property expressed.  
+These cases go far beyond the instances previously emphasized (e.g., ``Mosquitos carry the West Nile virus''), and in such instances the notion of non-conforming individuals being regarded as ``exceptions'' seems attenuated if not absent altogether.
 
-Why might exceptionality appear in relevant in some generics and not in others? 
-Let us assume, possibly incorrectly, that exceptionality is something to be considered \emph{directly} rather than being regarded as a by-product of some other processes.  
-I examine two potential answers. 
+Why might exceptionality appear relevant in some generics and not in others? 
+%Let us assume, possibly incorrectly, that exceptionality is something to be considered \emph{directly} rather than being regarded as a by-product of some other processes.  
+%I examine two potential answers. 
 It could be a direct function of \emph{pervasiveness} and a purely graded intuition.
-For example, strong intuitions of exceptionality are generated if the ratio of conforming to nonconforming individuals is sufficiently high, and intuitions weaken monotonically as the ratio decreases, and that?s all there is to the story.  
-I will present some survey data that bears on this question, as well as observations stemming from recent work by \citeA{leslie2017original} 
+For example, strong intuitions of exceptionality are generated if the ratio of conforming to nonconforming individuals is sufficiently high, and intuitions weaken monotonically as the ratio decreases.
+I will present some survey data that bears on this question, as well as observations stemming from recent work by \citeA{leslie2017original}. 
 The other option attributes the intuition to a fundamental semantic source: It could be that there are really two or more notions that are conflated under the the label ``generic'' to be untangled. 
 Both cross-linguistic work by myself and the work of \citeA{prasada2013conceptual} provide bases for considering this possibility.  
 Roughly speaking, the more attributable the regularity to something like inherent structure (a notion to be unpacked), the more likely exceptionality is to arise for the nonconforming instances.
+
+\nocite{shepard1987}
 
 \bibliographystyle{apacite}
 
